@@ -7,20 +7,45 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
 body {
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif !important;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
-  color: rgba(0, 0, 0, 0.7); }
+  color: rgba(0, 0, 0, 0.7);
+  background-image: url(../images/bg.jpg) !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+/* ===== whatsapp ===== */
+
+.appWhatsapp{
+  position:fixed;
+  right: 60px;
+  bottom: 80px;
+  width: 60px !important;
+  z-index: 999999999999999 !important;
+}
+
+.iconowapp .appWhatsapp img {
+  max-width: 25px !important;
+  height:50px;
+}
+
+/* ===== whatsapp ===== */
   @media screen and (max-width: 992px) {
     body {
       font-size: 16px; } }
+*{
+  font-family: 'Josefin Sans', sans-serif !important;
 
+}
 a {
   color: #2c98f0;
   -webkit-transition: 0.5s;
@@ -67,25 +92,26 @@ figure {
   color: #fff;
   background: #2c98f0; }
 
-#colorlib-page {
+#chipi-page {
   width: 100%;
-  overflow: hidden;
-  position: relative; }
+  height: 100%;
 
-#colorlib-aside {
-  padding-top: 3em;
-  padding-bottom: 40px;
+}
+
+#chipi-aside {
+
   float: left;
+  height: 100%;
+
   width: 300px;
   position: fixed;
-  overflow-y: scroll;
   z-index: 1001;
-  background: #f2f3f7;
+  background-color: rgba(242,242,242,0.8);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    #colorlib-aside {
+    #chipi-aside {
       width: 300px;
       -moz-transform: translateX(-300px);
       -webkit-transform: translateX(-300px);
@@ -93,7 +119,7 @@ figure {
       -o-transform: translateX(-300px);
       transform: translateX(-300px);
       padding-top: 4em; } }
-  #colorlib-aside .author-img {
+  #chipi-aside .author-img {
     width: 150px;
     height: 150px;
     margin: 0 auto;
@@ -102,36 +128,36 @@ figure {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-  #colorlib-aside .position {
+  #chipi-aside .position {
     display: block;
     margin-bottom: 2em;
     font-size: 12px;
     text-transform: uppercase; }
-  #colorlib-aside #colorlib-logo {
+  #chipi-aside #chipi-logo {
     text-align: right;
     font-weight: 700;
     font-size: 22px;
     margin-bottom: .5em;
     display: block;
     width: 100%; }
-    #colorlib-aside #colorlib-logo a {
+    #chipi-aside #chipi-logo a {
       display: block;
       text-align: center;
       color: #000;
       padding-right: .3em; }
-  #colorlib-aside #colorlib-main-menu {
+  #chipi-aside #chipi-main-menu {
     display: block;
     width: 100%; }
-    #colorlib-aside #colorlib-main-menu .collapse {
+    #chipi-aside #chipi-main-menu .collapse {
       display: block !important; }
-    #colorlib-aside #colorlib-main-menu ul {
+    #chipi-aside #chipi-main-menu ul {
       text-align: center;
       margin: 0;
       padding: 0; }
       @media screen and (max-width: 768px) {
-        #colorlib-aside #colorlib-main-menu ul {
+        #chipi-aside #chipi-main-menu ul {
           margin: 0 0 2em 0; } }
-      #colorlib-aside #colorlib-main-menu ul li {
+      #chipi-aside #chipi-main-menu ul li {
         margin: 0 0 10px 0;
         padding: 0;
         list-style: none;
@@ -139,7 +165,7 @@ figure {
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px; }
-        #colorlib-aside #colorlib-main-menu ul li a {
+        #chipi-aside #chipi-main-menu ul li a {
           color: rgba(0, 0, 0, 0.7);
           text-decoration: none;
           position: relative;
@@ -148,7 +174,7 @@ figure {
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-          #colorlib-aside #colorlib-main-menu ul li a:after {
+          #chipi-aside #chipi-main-menu ul li a:after {
             content: "";
             position: absolute;
             height: 1px;
@@ -167,26 +193,26 @@ figure {
             -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-          #colorlib-aside #colorlib-main-menu ul li a:hover {
+          #chipi-aside #chipi-main-menu ul li a:hover {
             text-decoration: none;
             color: black; }
-            #colorlib-aside #colorlib-main-menu ul li a:hover:after {
+            #chipi-aside #chipi-main-menu ul li a:hover:after {
               visibility: visible;
               -webkit-transform: scaleX(1);
               -moz-transform: scaleX(1);
               -ms-transform: scaleX(1);
               -o-transform: scaleX(1);
               transform: scaleX(1); }
-        #colorlib-aside #colorlib-main-menu ul li.active a {
+        #chipi-aside #chipi-main-menu ul li.active a {
           color: #2c98f0; }
-          #colorlib-aside #colorlib-main-menu ul li.active a:after {
+          #chipi-aside #chipi-main-menu ul li.active a:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
             -moz-transform: scaleX(1);
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-  #colorlib-aside .colorlib-footer {
+  #chipi-aside .chipi-footer {
     font-size: 15px;
     text-align: center;
     font-weight: 400;
@@ -194,23 +220,23 @@ figure {
     padding: 0 20px;
     width: 100%; }
     @media screen and (max-width: 768px) {
-      #colorlib-aside .colorlib-footer {
+      #chipi-aside .chipi-footer {
         position: relative;
         bottom: 0; } }
-    #colorlib-aside .colorlib-footer span {
+    #chipi-aside .chipi-footer span {
       display: block; }
-    #colorlib-aside .colorlib-footer ul {
+    #chipi-aside .chipi-footer ul {
       padding: 0;
       margin: 0; }
-      #colorlib-aside .colorlib-footer ul li {
+      #chipi-aside .chipi-footer ul li {
         padding: 0;
         margin: 0;
         display: inline;
         list-style: none; }
-        #colorlib-aside .colorlib-footer ul li a {
+        #chipi-aside .chipi-footer ul li a {
           color: rgba(255, 255, 255, 0.3);
           padding: 4px; }
-          #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
+          #chipi-aside .chipi-footer ul li a:hover, #chipi-aside .chipi-footer ul li a:active, #chipi-aside .chipi-footer ul li a:focus {
             text-decoration: none;
             outline: none;
             color: #2c98f0; }
@@ -219,111 +245,118 @@ figure {
   max-width: 1170px;
   margin: 0 auto; }
 
-#colorlib-main {
+#chipi-main {
   width: calc(100% - 300px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    #colorlib-main {
+    #chipi-main {
       width: 100%;
       padding: 0 1em; } }
 
-#colorlib-hero {
+#chipi-hero {
   min-height: 500px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
   margin-bottom: 10em;
   clear: both; }
-  #colorlib-hero .flexslider {
+  .gbblack{
+
+  }
+  #chipi-hero .flexslider {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+
+
     border: none;
     z-index: 1;
     margin-bottom: 0; }
-    #colorlib-hero .flexslider .slides {
+    #chipi-hero .flexslider .slides {
       position: relative;
-      overflow: visible; }
-      #colorlib-hero .flexslider .slides li {
+      overflow: visible;
+    }
+      #chipi-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
         min-height: 400px;
         position: relative; }
-    #colorlib-hero .flexslider .flex-control-nav {
+    #chipi-hero .flexslider .flex-control-nav {
       bottom: 20px;
       z-index: 1000;
       left: 20px;
       float: left;
       width: auto; }
       @media screen and (max-width: 768px) {
-        #colorlib-hero .flexslider .flex-control-nav {
+        #chipi-hero .flexslider .flex-control-nav {
           right: 20px;
-          top: 100px; } }
-      #colorlib-hero .flexslider .flex-control-nav li {
+          top: 100px;
+          } }
+      #chipi-hero .flexslider .flex-control-nav li {
         display: block;
         margin-bottom: 10px; }
-        #colorlib-hero .flexslider .flex-control-nav li a {
+        #chipi-hero .flexslider .flex-control-nav li a {
           background: rgba(0, 0, 0, 0.5);
           -webkit-box-shadow: none;
           box-shadow: none;
           width: 12px;
           height: 12px;
           cursor: pointer; }
-          #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
+          #chipi-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             background: transparent;
             border: 2px solid #2c98f0; }
-    #colorlib-hero .flexslider .flex-direction-nav {
+    #chipi-hero .flexslider .flex-direction-nav {
       display: none; }
-    #colorlib-hero .flexslider .slider-text {
+    #chipi-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
       min-height: 500px;
       z-index: 9; }
-      #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+      #chipi-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
         min-height: 700px;
         padding: 2.5em;
         position: relative; }
         @media screen and (max-width: 768px) {
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+          #chipi-hero .flexslider .slider-text > .slider-text-inner {
             text-align: center; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner h1, #chipi-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
           color: black;
           font-family: "Playfair Display", Georgia, serif; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 60px;
           line-height: 1.3;
           font-weight: 700; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+            #chipi-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
           font-family: "Quicksand", Arial, sans-serif; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
+          #chipi-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
             border-bottom: 1px solid rgba(44, 152, 240, 0.7); }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner .heading-section {
           font-size: 50px; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
+            #chipi-hero .flexslider .slider-text > .slider-text-inner .heading-section {
               font-size: 30px; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner s
-.colorlib-lead {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner s
+.chipi-lead {
           font-size: 20px;
           color: #fff; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner p {
           margin-bottom: 0; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+        #chipi-hero .flexslider .slider-text > .slider-text-inner .btn {
           font-size: 12px;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -331,20 +364,20 @@ figure {
           padding: 10px 15px !important;
           border: none;
           font-weight: 400; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+          #chipi-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: #000;
             border: 1px solid #000;
             background: transparent !important; }
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
+            #chipi-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
               background: transparent !important;
               border: 1px solid #000 !important; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+            #chipi-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
 
 body.offcanvas {
   overflow-x: hidden; }
-  body.offcanvas #colorlib-aside {
+  body.offcanvas #chipi-aside {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -354,7 +387,7 @@ body.offcanvas {
     background: #f2f3f7;
     z-index: 999;
     position: fixed; }
-  body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
+  body.offcanvas #chipi-main, body.offcanvas .chipi-nav-toggle {
     top: 0;
     -moz-transform: translateX(300px);
     -webkit-transform: translateX(300px);
@@ -362,38 +395,39 @@ body.offcanvas {
     -o-transform: translateX(300px);
     transform: translateX(300px); }
 
-.colorlib-narrow-content {
+.chipi-narrow-content {
   padding: 0 2.5em; }
   @media screen and (max-width: 768px) {
-    .colorlib-narrow-content {
+    .chipi-narrow-content {
       padding: 0; } }
 
 .no-gutters {
   margin: 0;
   padding: 0; }
 
-.colorlib-experience,
-.colorlib-skills,
-.colorlib-education,
-.colorlib-blog,
-.colorlib-work,
-.colorlib-about,
-.colorlib-services,
-.colorlib-contact {
+.chipi-experience,
+.chipi-skills,
+.chipi-education,
+.chipi-blog,
+.chipi-work,
+.chipi-about,
+.chipi-services,
+.chipi-contact {
+  text-align: center;
   padding-top: 4em;
   padding-bottom: 9em;
   clear: both;
   width: 100%;
   display: block; }
   @media screen and (max-width: 768px) {
-    .colorlib-experience,
-    .colorlib-skills,
-    .colorlib-education,
-    .colorlib-blog,
-    .colorlib-work,
-    .colorlib-about,
-    .colorlib-services,
-    .colorlib-contact {
+    .chipi-experience,
+    .chipi-skills,
+    .chipi-education,
+    .chipi-blog,
+    .chipi-work,
+    .chipi-about,
+    .chipi-services,
+    .chipi-contact {
       padding-top: 5em;
       padding-bottom: 8em; } }
 
@@ -403,7 +437,7 @@ body.offcanvas {
   background-repeat: no-repeat;
   position: relative; }
 
-.colorlib-heading {
+.chipi-heading {
   font-size: 18px;
   margin-bottom: 4em;
   font-weight: 700;
@@ -411,10 +445,10 @@ body.offcanvas {
   letter-spacing: 5px;
   line-height: 1.8;
   position: relative; }
-  .colorlib-heading span {
+  .chipi-heading span {
     display: block; }
   @media screen and (max-width: 768px) {
-    .colorlib-heading {
+    .chipi-heading {
       margin-bottom: 3em; } }
 
 .heading-meta {
@@ -432,7 +466,7 @@ body.offcanvas {
   margin-bottom: 30px; }
 
 .about-desc h3 {
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 500; }
@@ -808,13 +842,13 @@ body.offcanvas {
     .progress-bar.color-6 span {
       color: #4054b2; }
 
-.colorlib-feature {
+.chipi-feature {
   text-align: left;
   width: 100%;
   float: left;
   margin-bottom: 40px;
   position: relative; }
-  .colorlib-feature .colorlib-icon {
+  .chipi-feature .chipi-icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -827,35 +861,35 @@ body.offcanvas {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px; }
-    .colorlib-feature .colorlib-icon i {
+    .chipi-feature .chipi-icon i {
       display: table-cell;
       vertical-align: middle;
       color: #2c98f0;
       font-size: 60px;
       height: 100px; }
       @media screen and (max-width: 1200px) {
-        .colorlib-feature .colorlib-icon i {
+        .chipi-feature .chipi-icon i {
           font-size: 40px; } }
-  .colorlib-feature .colorlib-text {
+  .chipi-feature .chipi-text {
     padding-left: 120px;
     width: 100%; }
-    .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
+    .chipi-feature .chipi-text h2, .chipi-feature .chipi-text h3 {
       margin: 0;
       padding: 0; }
-    .colorlib-feature .colorlib-text h3 {
+    .chipi-feature .chipi-text h3 {
       font-weight: 500;
       margin-bottom: 20px;
       color: rgba(0, 0, 0, 0.7);
       font-size: 14px;
       letter-spacing: 3px;
       text-transform: uppercase; }
-  .colorlib-feature.colorlib-feature-sm .colorlib-text {
+  .chipi-feature.chipi-feature-sm .chipi-text {
     margin-top: 30px; }
-  .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+  .chipi-feature.chipi-feature-sm .chipi-icon i {
     color: #2c98f0;
     font-size: 40px; }
     @media screen and (max-width: 1200px) {
-      .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+      .chipi-feature.chipi-feature-sm .chipi-icon i {
         font-size: 28px; } }
 
 .blog-entry {
@@ -1025,17 +1059,17 @@ body.offcanvas {
 .btn-load-more {
   width: 100%; }
 
-#colorlib-counter {
+#chipi-counter {
   position: relative;
   clear: both;
   margin-bottom: 5em; }
 
-.colorlib-counters {
+.chipi-counters {
   padding: 3em 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
-  .colorlib-counters .overlay {
+  .chipi-counters .overlay {
     z-index: 0;
     position: absolute;
     bottom: 0;
@@ -1043,13 +1077,13 @@ body.offcanvas {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.4); }
-  .colorlib-counters .icon {
+  .chipi-counters .icon {
     width: 100px;
     height: 100px;
     display: table;
     margin: 0 auto;
     margin-bottom: 20px; }
-    .colorlib-counters .icon i {
+    .chipi-counters .icon i {
       display: table-cell;
       vertical-align: middle;
       width: 100px;
@@ -1061,9 +1095,9 @@ body.offcanvas {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       border-radius: 50%; }
-  .colorlib-counters .counter-wrap {
+  .chipi-counters .counter-wrap {
     border: 1px solid red !important; }
-  .colorlib-counters .colorlib-counter {
+  .chipi-counters .chipi-counter {
     font-size: 40px;
     display: block;
     color: white;
@@ -1071,7 +1105,7 @@ body.offcanvas {
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
-  .colorlib-counters .colorlib-counter-label {
+  .chipi-counters .chipi-counter-label {
     color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     font-size: 14px;
@@ -1079,11 +1113,11 @@ body.offcanvas {
     margin-bottom: 2em;
     display: block; }
 
-.colorlib-social {
+.chipi-social {
   padding: 0;
   margin: 0;
   text-align: center; }
-  .colorlib-social li {
+  .chipi-social li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -1091,7 +1125,7 @@ body.offcanvas {
     display: inline-block;
     zoom: 1;
     *display: inline; }
-    .colorlib-social li a {
+    .chipi-social li a {
       font-size: 22px;
       color: #000;
       padding: 10px;
@@ -1104,11 +1138,11 @@ body.offcanvas {
       -ms-border-radius: 7px;
       border-radius: 7px; }
       @media screen and (max-width: 768px) {
-        .colorlib-social li a {
+        .chipi-social li a {
           padding: 10px 8px; } }
-      .colorlib-social li a:hover {
+      .chipi-social li a:hover {
         color: #2c98f0; }
-      .colorlib-social li a:hover, .colorlib-social li a:active, .colorlib-social li a:focus {
+      .chipi-social li a:hover, .chipi-social li a:active, .chipi-social li a:focus {
         outline: none;
         text-decoration: none;
         color: #2c98f0; }
@@ -1120,7 +1154,7 @@ body.offcanvas {
     #map {
       height: 200px; } }
 
-.colorlib-bg-color {
+.chipi-bg-color {
   background: #fafafa;
   position: relative; }
 
@@ -1299,17 +1333,17 @@ body.offcanvas {
 #message {
   height: 130px; }
 
-.colorlib-nav-toggle {
+.chipi-nav-toggle {
   cursor: pointer;
   text-decoration: none; }
-  .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
+  .chipi-nav-toggle.active i::before, .chipi-nav-toggle.active i::after {
     background: #000; }
-  .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
+  .chipi-nav-toggle.dark.active i::before, .chipi-nav-toggle.dark.active i::after {
     background: #000; }
-  .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+  .chipi-nav-toggle:hover, .chipi-nav-toggle:focus, .chipi-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
-  .colorlib-nav-toggle i {
+  .chipi-nav-toggle i {
     position: relative;
     display: -moz-inline-stack;
     display: inline-block;
@@ -1325,7 +1359,7 @@ body.offcanvas {
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
+    .chipi-nav-toggle i::before, .chipi-nav-toggle i::after {
       content: '';
       width: 30px;
       height: 2px;
@@ -1335,35 +1369,35 @@ body.offcanvas {
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
-  .colorlib-nav-toggle.dark i {
+  .chipi-nav-toggle.dark i {
     position: relative;
     color: #000;
     background: #000;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle.dark i::before, .colorlib-nav-toggle.dark i::after {
+    .chipi-nav-toggle.dark i::before, .chipi-nav-toggle.dark i::after {
       background: #000;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
 
-.colorlib-nav-toggle i::before {
+.chipi-nav-toggle i::before {
   top: -7px; }
 
-.colorlib-nav-toggle i::after {
+.chipi-nav-toggle i::after {
   bottom: -7px; }
 
-.colorlib-nav-toggle:hover i::before {
+.chipi-nav-toggle:hover i::before {
   top: -10px; }
 
-.colorlib-nav-toggle:hover i::after {
+.chipi-nav-toggle:hover i::after {
   bottom: -10px; }
 
-.colorlib-nav-toggle.active i {
+.chipi-nav-toggle.active i {
   background: transparent; }
 
-.colorlib-nav-toggle.active i::before {
+.chipi-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1371,7 +1405,7 @@ body.offcanvas {
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg); }
 
-.colorlib-nav-toggle.active i::after {
+.chipi-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1379,7 +1413,7 @@ body.offcanvas {
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 
-.colorlib-nav-toggle {
+.chipi-nav-toggle {
   position: fixed;
   left: -5px;
   top: 0px;
@@ -1392,7 +1426,7 @@ body.offcanvas {
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    .colorlib-nav-toggle {
+    .chipi-nav-toggle {
       opacity: 1;
       visibility: visible; } }
 
